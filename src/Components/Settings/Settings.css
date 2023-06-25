@@ -1,0 +1,245 @@
+.mainContainer {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  padding: 3rem 0;
+}
+.mainContainer button {
+  float: right;
+  margin: 1rem 0;
+}
+
+.settingsContent {
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.155);
+  border-radius: 5px;
+}
+
+.settingsContent h6 {
+  font-weight: bolder;
+}
+
+.settingsContent input {
+  background-color: #dcdde16d;
+  border: none;
+  outline: none;
+  padding: 6px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.SaveBtn {
+  background-color: #3867d6;
+  color: #ecf0f1;
+  padding: 5px 1.5rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.profile {
+  margin-top: 5rem;
+}
+
+.profile img {
+  margin: 0 1rem;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.155);
+  border-radius: 5px;
+}
+
+.userInfo {
+  display: flex;
+  flex-wrap: unset;
+  align-items: center;
+  width: 80%;
+  margin-left: 2rem;
+}
+
+.userInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.userInfo li {
+  margin-right: 10px;
+}
+
+.userPermissions {
+  margin-top: 5rem;
+}
+
+.userPermissionHeader {
+  display: flex;
+}
+.userPermissionHeader p {
+  margin-left: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  padding: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.155);
+  box-shadow: 5px;
+  overflow-x: scroll;
+  margin-left: 0;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.table select {
+  border: none;
+  background-color: #d1d8e09e;
+  padding: 5px 10px;
+  outline: none;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.table td {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-weight: bolder;
+}
+
+.checkbox-container {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  border: 1px solid #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #2196f3;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* ******************** For Responsiveness ********************** */
+
+@media (max-width: 1100px) {
+  .mainContainer {
+    width: 70%;
+    left: 15%;
+  }
+  .userPermissions {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    width: 90%;
+    left: 5%;
+  }
+
+  .mainContainer button {
+    width: 100%;
+    float: none;
+  }
+
+  .userInfo {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .settingsContent input,
+  .table select {
+    width: 100%;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.7rem;
+  }
+
+  .checkbox-container {
+    margin-left: 5px;
+  }
+  
+
+  .profileContent 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userInfo
+  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}

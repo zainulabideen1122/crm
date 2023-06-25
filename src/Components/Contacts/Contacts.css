@@ -1,0 +1,146 @@
+.contactContainer {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding: 3rem 0;
+  overflow-x: auto;
+}
+
+.contactHeader {
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle {
+  line-height: 0px;
+}
+
+.headerTitle h5 {
+  font-weight: bolder;
+  padding-bottom: 8px;
+}
+
+.headerActions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.excelContainer {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #20bf6b;
+  padding: 3px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.excelContainer p {
+  margin: 0;
+  border-left: 1px solid black;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-color: wheat;
+}
+
+.searchBar {
+  background-color: #d1d8e0c4;
+  padding: 3px 10px;
+  margin-left: 1rem;
+  width: 15rem;
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.innerContainer {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: #d1d8e068;
+  margin-top: 5px;
+  min-width: 100%; /* Set a minimum width to prevent the container from shrinking beyond its content */
+}
+
+.contactHeader ul,
+.contactBody ul {
+  display: flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.806);
+  padding: 0rem 2rem;
+  border-radius: 5px;
+  min-width: fit-content; /* Set a minimum width to allow horizontal scrolling */
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.contactHeader li {
+  list-style-type: none;
+  padding: 8px 20px;
+  display: block;
+  width: 130px;
+  text-align: center;
+}
+
+.contactBody li {
+  list-style-type: none;
+  padding: 8px 15px;
+  display: block;
+  width: 130px;
+  text-align: center;
+}
+
+.contactBody ul {
+  background-color: transparent;
+}
+
+.actionBtns {
+  margin-left: auto;
+}
+
+.actionBtns span {
+  cursor: pointer;
+}
+
+/* ************************ For Responsiveness ************************ */
+
+@media (max-width: 1100px) {
+  * {
+    overflow-x: hidden;
+  }
+  .innerContainer {
+    overflow-x: scroll;
+  }
+
+  .contactHeader ul,
+  .contactBody ul {
+    min-width: fit-content;
+    padding: 0 0rem;
+  }
+  .contactContainer {
+    overflow-x: scroll;
+  }
+
+  .contactHeader {
+    flex-direction: column;
+    align-items: unset;
+    margin-bottom: 2rem;
+  }
+  .headerTitle {
+    top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactContainer {
+    width: 100%;
+    left: 0;
+  }
+}

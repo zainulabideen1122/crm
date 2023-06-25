@@ -1,0 +1,172 @@
+.salesBotContainer {
+  min-width: 80%;
+  position: relative;
+  left: 10%;
+  margin-top: 4rem;
+}
+
+.salesBotContainer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.salesBotContainer .salesbotInput select {
+  border: none;
+  outline: none;
+  background: #ecf0f1;
+  width: 250px;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+.lowerBodyOptions {
+  font-size: 0.8rem;
+}
+
+.selectBtn {
+  border: none;
+  background-color: blue;
+  padding: 8px 25px;
+  color: rgba(255, 255, 255, 0.979);
+  border-radius: 5px;
+}
+
+.manageSalesBot {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-top: 4rem;
+}
+
+.manageSalesBotHeader h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.manageSalesBotHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.saveBtn {
+  margin-left: auto;
+}
+
+.manageSalesbotBody {
+  display: flex;
+}
+
+.salesbotStatusContainer {
+  margin: 0 1.5rem;
+  width: 25rem !important;
+  flex: 0 0 auto;
+}
+
+.salesbotStatusContainer h5 {
+  padding: 7px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.queryColor {
+  background-color: #74b9ff;
+}
+
+.testimonialColor {
+  background-color: #ffeaa7;
+}
+
+.defaultColor {
+  background-color: #a29bfe;
+}
+
+.salesbotStatusBody {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+.upperInnerBody {
+  background-color: #ecf0f1;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.salesbotStatusInnerBody {
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+}
+.InnerBodyHeader {
+  display: flex;
+  align-items: center;
+}
+.InnerBodyHeader p,
+.addAttachment p {
+  margin: 0;
+  padding-left: 5px;
+}
+.innerBodyfaceIcon {
+  margin-left: auto;
+}
+
+.addAttachment {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 10rem;
+  border-radius: 20px;
+  padding: 0 5px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.lowerInnerBody {
+  background: white;
+  padding-top: 0.7rem;
+  padding-bottom: 0.1rem;
+}
+
+.lowerInnerBody div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.lowerInnerBody div input {
+  width: 5rem;
+}
+
+.lowerInnerBody div p {
+  margin: 0;
+  font-weight: 700;
+  width: 45%;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.lowerInnerBody div input,
+.lowerInnerBody div select {
+  border: none;
+  outline: none;
+  background-color: #ecf0f1;
+}
+
+.lowerInnerBody div select {
+  width: 50%;
+}
+
+/* ******************** For Responsiveness ********************** */
+
+@media (max-width: 1100px) {
+  .salesBotContainer {
+    width: 100%; /* Adjust the width as needed */
+  }
+}
+
+@media (max-width: 800px) {
+  .manageSalesBot {
+    width: 100%;
+    left: 0%;
+  }
+}

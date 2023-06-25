@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.App {
+  display: flex;
+}
+
+.AppContent {
+  flex-grow: 1;
+}
+
+.navBar {
+  background-color: #2f3640;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.navbarContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #dcdde1;
+}
+
+.websiteLogo {
+  margin: 0 2rem;
+}
+
+.activePage {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0.6rem 2rem 0rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.39);
+  font-size: 1.5rem;
+}
+
+.navbarUser {
+  width: 25%;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.userContent {
+  display: flex;
+  align-items: center;
+}
+
+.userContent p {
+  color: #dcdde1;
+  display: flex;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.userImage {
+  margin-left: auto;
+}
+
+.sideMenu {
+  background-color: white;
+  width: 85px;
+  transition: all 0.3s ease-in-out;
+  height: 100vh;
+  border-right: 1px solid #c9c9c9;
+}
+
+.sideMenu.expanded {
+  width: 210px;
+  transition: all 0.3s ease;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+  padding: 0;
+  margin: 0;
+}
+
+.active span,
+.active div {
+  color: #2980b9;
+}
+
+.activity {
+  background-color: #297fb946;
+  border-left: 4px solid #2980b9;
+  margin: 0;
+}
+
+.activity div
+{
+  margin-left:-5px;
+}
+
+.subActivity {
+  font-weight: bolder !important;
+  color: black !important;
+}
+
+.menuItem {
+  margin-bottom: 10px;
+  margin: 0rem 0;
+}
+
+.menuItem > a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 20px 8px;
+  font-weight: bolder;
+}
+
+.menuItem > a:hover {
+  color: #2980b9;
+}
+
+.subList li,
+.subList a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: lighter;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.subList a:hover {
+  color: #2980b9;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  margin-left: 20px;
+}
+
+.navigationBtn {
+  position: absolute;
+  display: none;
+}
+.lastTwoChild {
+  margin-top: auto;
+}
+
+/* ******************** For Responsiveness ********************** */
+
+@media (max-width: 500px) {
+  .sideMenu {
+    width: 0;
+  }
+  .navigationBtn {
+    display: block;
+    right: 5%;
+  }
+  .userContent {
+    display: none;
+  }
+
+  .sideMenu.expanded {
+    width: 500px;
+  }
+  .websiteLogo {
+    margin: 0;
+  }
+  .activePage {
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+}

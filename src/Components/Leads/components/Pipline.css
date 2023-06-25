@@ -1,0 +1,407 @@
+.piplineContainer {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  margin-top: 4rem;
+}
+
+.piplinePageHeader,
+.piplineHeading {
+  display: flex;
+  align-items: center;
+}
+.pipelineHeaderIcons {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  place-items: center;
+}
+
+.pipelineHeaderIcons p {
+  margin: 0;
+  cursor: pointer;
+}
+.piplineHeading h4 {
+  font-weight: bolder;
+  font-size: 1.4rem;
+  margin: 0;
+  margin-left: 1.5rem;
+}
+.pipelineBackArrow {
+  padding: 10px 12px;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.495);
+}
+
+.pipelineExcelIcon {
+  color: white;
+  background-color: #20bf6b;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pipelineDriverIcon {
+  background-color: #ecf0f1;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.pipelineContent {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pipelineContentHeader {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  background-color: #ecf0f1;
+}
+
+.pipelineContentHeader h5 {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.pipelineContentHeader p {
+  margin: 0;
+  font-size: 0.7rem;
+  margin-bottom: 6px;
+}
+.pipelineTestimonal,
+.pipelineIntro {
+  border-bottom: 3px solid #f1c40f;
+}
+
+.pipelineFollow2,
+.pipelineFollow1 {
+  border-bottom: 3px solid #c0392b;
+}
+
+.pipelineContentBody {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  margin-bottom: 2rem;
+}
+.profile-image {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+}
+.piplineUserContainer {
+  border: 1px solid gray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.559);
+  border-radius: 5px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.date {
+  font-weight: 0.7rem;
+}
+
+.right p,
+.name {
+  margin: 0;
+}
+
+.editPipelineContainer {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-top: 4rem;
+}
+
+.editPipelineHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.backBtn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-right: 6px;
+  background-color: #ecf0f1;
+  box-shadow: 0 3px 5px rgba(128, 128, 128, 0.728);
+  cursor: pointer;
+}
+
+.editPipelineHeader h5 {
+  margin: 0;
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.editPipelineBody {
+  display: flex;
+}
+
+.editLeftBody {
+  width: 60%;
+}
+
+.editLeftBody p,
+.editLeftBody h5 {
+  margin: 0;
+}
+.editLeftBody h5 {
+  font-weight: bold;
+}
+.leadStages div,
+.finalStages div {
+  display: flex;
+  align-items: center;
+  padding: 10px 1.5rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+.incoming {
+  background-color: #bdc3c78d;
+}
+.query {
+  background-color: #3498db8e;
+}
+
+.testimonials {
+  background-color: #f1c40f67;
+}
+.negotiation {
+  background-color: #e67d2283;
+}
+
+.leadStages div p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.leadStages svg {
+  margin-right: 15px;
+}
+
+.stagesRightIcons {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.finalStages {
+  margin-top: 3rem;
+}
+.closedWon {
+  background-color: #2ecc7071;
+}
+
+.closedlost {
+  background-color: #bdc3c78d;
+}
+
+.saveBtn {
+  float: right;
+  border: none;
+  outline: none;
+  background-color: #3867d6;
+  color: white;
+  padding: 8px 2rem;
+  border-radius: 5px;
+}
+
+.editRightBody {
+  width: 40%;
+  margin-left: 2rem;
+}
+.addLeadStage h5 {
+  font-weight: bold;
+}
+.addLeadBody {
+  display: flex;
+  flex-direction: column;
+  background-color: #bdc3c75f;
+  border-radius: 10px;
+  width: 60%;
+  padding: 0 0.5rem;
+}
+
+.addLeadBody .inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  background-color: white;
+  position: relative;
+  left: 2.5%;
+  margin: 1rem 0;
+}
+
+.addLeadBody .inputContainer input {
+  border: none;
+  outline: none;
+  padding: 6px 0rem;
+  width: 80%;
+}
+
+.addBtn {
+  width: 5rem;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: #3867d6;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin-bottom: 1rem;
+}
+
+.pipelinePhoneNum {
+  margin-top: 2rem;
+}
+
+.pipelinePhoneNum h5 {
+  font-weight: bold;
+}
+
+.phoneNumberBody {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #bdc3c75f;
+  width: 60%;
+  padding: 0.5rem 1rem;
+  margin-top: 0.6rem;
+}
+
+.phoneNumberBody p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.reconnectBtn {
+  background-color: #3867d6;
+  color: white;
+  width: 60%;
+  border: none;
+  outline: none;
+  padding: 7px 0;
+  border-radius: 5px;
+  margin-top: 0.8rem;
+}
+
+/* ************************ For Responsiveness ************************ */
+
+@media (max-width: 1100px) {
+  .editPipelineBody {
+    flex-direction: column;
+  }
+  .editRightBody {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .piplineContainer {
+    width: 100%;
+    left: 0;
+    margin-top: 3rem;
+  }
+
+  .piplinePageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pipelineHeading h4 {
+    font-size: 1.2rem;
+  }
+
+  .pipelineHeaderIcons {
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+
+  .pipelineContentHeader {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pipelineContentBody {
+    grid-template-columns: 1fr;
+  }
+  .editLeftBody {
+    width: 100%;
+  }
+  .addLeadBody {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .piplineContainer {
+    margin-top: 2rem;
+    left: 0;
+  }
+
+  .piplineHeading h4 {
+    font-size: 1rem;
+  }
+
+  .pipelineHeaderIcons {
+    margin-top: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .pipelineContentHeader {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .pipelineContentHeader h5,
+  .pipelineContentHeader p {
+    font-size: 0.8rem;
+  }
+
+  .pipelineContentBody {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+  }
+
+  .piplineUserContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left,
+  .right {
+    margin: 0;
+  }
+
+  .date {
+    font-size: 0.7rem;
+  }
+
+  .right p,
+  .name {
+    font-size: 0.8rem;
+  }
+}

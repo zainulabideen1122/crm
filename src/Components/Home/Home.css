@@ -1,0 +1,263 @@
+.HomeContainer {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-top: 3rem;
+}
+.HomeContainer h1 {
+  margin-bottom: 2rem;
+}
+.homeContent {
+  display: flex;
+}
+
+.homeLeftBody {
+  width: 70%;
+  margin-right: 2.5rem;
+}
+
+.homeRightBody {
+  width: 30%;
+}
+
+.leftBodyHeader {
+  display: flex;
+}
+.leftBodyHeader h5 {
+  font-weight: bolder;
+}
+.leftBodyHeader select {
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: #ecf0f1;
+  width: 150px;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.homeLeftBodyContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  grid-column-gap: 2.4rem;
+  margin-top: 1.5rem;
+}
+
+.homeLeftBodyContent div {
+  width: 100%;
+  border-radius: 7px;
+}
+.leadsContainerHead p,
+.leadsContainerHead h1 {
+  margin: 0;
+  font-weight: 400;
+  color: white;
+}
+
+.headIcon {
+  background: rgba(255, 255, 255, 0.24);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.leadsContainerHead h1 {
+  font-size: 3.5rem;
+  padding: 1rem 0;
+}
+
+.performanceCardContainer {
+  padding: 1rem;
+}
+
+.leftBodyFooter p {
+  margin: 0;
+  text-align: center;
+}
+.leftBodyFooter {
+  margin-top: 3rem;
+  border-radius: 3px;
+}
+.leftBodyFooter,
+.leftBodyFooter div {
+  display: flex;
+  align-items: center;
+}
+
+.leftBar {
+  background-color: #3498db2a;
+  width: 37%;
+  border: 1px solid gray;
+  border-radius: 5px 0 0 5px;
+}
+
+.rightBar {
+  width: 63%;
+  background-color: #f1c40f1e;
+  border: 1px solid gray;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+.barPercent {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+.leadsColor {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.331),
+    rgb(49, 125, 232)
+  );
+}
+
+.closedColor {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.331),
+    rgba(255, 166, 0, 0.735)
+  );
+}
+
+.closedRateColor {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.331),
+    rgba(246, 22, 85, 0.735)
+  );
+}
+
+.reportBody {
+  border: 1px solid #bdc3c7;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.reportBody p {
+  margin: 0;
+}
+
+.homeRightBody h5 {
+  font-weight: bold;
+}
+.ReportIcon,
+.leadsReport,
+.closedReports,
+.closedRateReports {
+  display: flex;
+}
+
+.ReportIcon {
+  padding: 3px 10px;
+}
+
+.ReportIcon,
+.ReportIcon p {
+  width: 5rem;
+  text-align: center;
+  background-color: #ecf0f1;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+.ReportIcon div {
+  background-color: gray;
+  margin: 1px;
+  padding: 0px 4px;
+  border-radius: 50%;
+  color: white;
+}
+
+.reportName {
+  padding-left: 1rem;
+  font-weight: 500;
+}
+
+.leadsReport,
+.closedReports,
+.closedRateReports {
+  margin-bottom: 1rem;
+}
+
+.avgResp,
+.responseRate {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.viewFullReportBtn {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  box-shadow: 0 1px 5px rgba(128, 128, 128, 0.546);
+}
+
+/* ************************ For Responsiveness ************************ */
+
+@media (max-width: 1100px) {
+  .HomeContainer {
+    width: 90%;
+    margin: 3rem auto;
+    position: relative;
+    left: 0%;
+  }
+
+  .homeContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .homeLeftBody {
+    flex: 1 1 70%;
+    margin-right: 2.5rem;
+  }
+
+  .homeRightBody {
+    flex: 1 1 30%;
+    margin-top: 2rem;
+  }
+  .homeLeftBodyContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .ReportIcon,
+  .leadsReport,
+  .closedReports,
+  .closedRateReports {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .leftBodyFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .leftBodyFooter div {
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .leftBodyFooter .leftBar {
+    width: 60%;
+  }
+  .leftBodyFooter .rightBar {
+    width: 80%;
+    margin-top: 1rem;
+  }
+}

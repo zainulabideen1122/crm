@@ -1,0 +1,455 @@
+.reportingContainer {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-top: 3rem;
+}
+
+.reportingHead {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.reportFilters {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.reportingHead h5 {
+  font-weight: bold;
+}
+.pipelineFilter,
+.timeFilter {
+  margin-left: 1rem;
+}
+.pipelineFilter p,
+.timeFilter p {
+  margin: 0;
+  margin-top: -1.5rem;
+}
+
+.pipelineFilter select,
+.timeFilter select {
+  border: none;
+  outline: none;
+  background-color: #bdc3c776;
+  width: 10rem;
+  padding: 4px;
+}
+
+.excelDiv {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #20bf6b;
+  padding: 3px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.excelDiv p {
+  margin: 0;
+  border-left: 1px solid black;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-color: wheat;
+}
+
+.reportContent {
+  display: flex;
+}
+
+.reportLeftBody {
+  width: 70%;
+  margin-right: 2.5rem;
+}
+
+.reportRightBody {
+  width: 30%;
+}
+.reportRightBody h5 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.leftBodyHeader {
+  display: flex;
+}
+.leftBodyHeader h5 {
+  font-weight: bolder;
+}
+.leftBodyHeader select {
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: #ecf0f1;
+  width: 150px;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.leftBodyContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  grid-column-gap: 2.4rem;
+  margin-top: 1.5rem;
+}
+
+.leftBodyContent div {
+  width: 100%;
+  border-radius: 7px;
+}
+.leadsContainerHead p,
+.leadsContainerHead h1 {
+  margin: 0;
+  font-weight: 400;
+  color: white;
+}
+
+.headIcon {
+  background: rgba(255, 255, 255, 0.24);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.leadsContainerHead h1 {
+  font-size: 3.5rem;
+  padding: 1rem 0;
+}
+
+.performanceCardContainer {
+  padding: 1rem;
+}
+
+.leftBar {
+  background-color: #3498db2a;
+  width: 37%;
+  border: 1px solid gray;
+  border-radius: 5px 0 0 5px;
+}
+
+.leadsColor {
+  background-color: rgb(49, 125, 232);
+}
+
+.closedColor {
+  background-color: rgba(255, 166, 0, 0.735);
+}
+
+.closedRateColor {
+  background-color: rgba(246, 22, 85, 0.735);
+}
+
+.leadsReport,
+.closedReports,
+.closedRateReports {
+  margin-bottom: 1rem;
+}
+
+.reportingBody {
+  padding: 1rem 0;
+  height: 11rem;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+.pipelineReport {
+  width: 80%;
+  position: relative;
+  left: 5%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.pipelineReport p {
+  margin: 0;
+}
+.pipelineReport .reportPercent {
+  background-color: #3741faf0;
+  padding: 1px 1rem;
+  color: white;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.responseContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.respTime,
+.respRate {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+.respTime {
+  margin-right: 2.5rem;
+}
+
+.respText p,
+.respText h3 {
+  margin: 0;
+}
+
+.respText p {
+  margin-top: 5px;
+}
+
+.respIcon {
+  background-color: #0831fff0;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 1.5rem 0 1rem;
+}
+
+.performanceByStaff {
+  margin-top: 3rem;
+}
+
+.performanceByStaffHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.performanceByStaffBody {
+  display: flex;
+  background-color: #ecf0f1;
+  padding: 2rem;
+}
+
+.performancePipeline {
+  width: 10%;
+}
+.performancePipelineHeading {
+  text-align: center;
+}
+
+.performancePipelineHeading h5 {
+  background-color: #0831fff0;
+  padding: 1.7rem 0;
+  color: white;
+  border-radius: 5px;
+}
+
+.performanceHeadingList {
+  width: 80%;
+}
+.headingListHeader {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  position: relative;
+  left: 2.5%;
+  background-color: white;
+  border-radius: 10px;
+}
+.headingListHeader h5 {
+  margin: 0;
+  padding: 1rem 2.5rem;
+  width: auto;
+  font-size: 1rem;
+}
+
+.headingListBody {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  position: relative;
+  left: 2.5%;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.headingListBody p {
+  padding: 0px 2.5rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-left: 1.5rem;
+}
+.performanceHeadingList th {
+  background-color: white;
+  padding: 1.7rem 10px;
+}
+.performanceHeadingList td {
+  padding: 8px 0;
+}
+
+th,
+td {
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* ******************** For Responsiveness ********************** */
+
+@media screen and (max-width: 1100px) {
+  .reportingContainer {
+    padding: 10px;
+  }
+
+  .reportHead {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .reportFilters {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .excelDiv,
+  .pipelineFilter,
+  .timeFilter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .reportContent {
+    flex-direction: column;
+  }
+
+  .reportLeftBody {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .leftBodyContent {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .leadsContainer,
+  .closedBlock,
+  .closedRateBlock {
+    width: 100%;
+  }
+
+  .reportRightBody {
+    margin-bottom: 20px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+
+  .reportingBody {
+    flex-wrap: wrap;
+  }
+
+  .pipelineReport {
+    width: 50%;
+  }
+
+  .responseContainer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .respTime,
+  .respRate {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+
+  .performanceByStaff {
+    margin-bottom: 20px;
+  }
+
+  .performanceByStaffHeader {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .performanceByStaffBody {
+    overflow-x: auto;
+  }
+
+  .performancePipelineHeading {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .performanceHeadingList {
+    overflow-x: auto;
+  }
+  .performanceHeadingList table {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .reportLeftBody {
+    width: 100%;
+  }
+
+  .reportRightBody {
+    width: 90%;
+    left: 5%;
+  }
+
+  .respTime,
+  .respRate {
+    width: 90%;
+    left: 5%;
+  }
+
+  .leftBodyContent div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .reportingContainer {
+    width: 100%;
+    left: 0;
+  }
+  .reportLeftBody {
+    width: 100%;
+  }
+
+  .reportRightBody {
+    width: 100%;
+    left: 0%;
+  }
+  .respTime,
+  .respRate {
+    width: 90%;
+    left: 5%;
+  }
+  .reportingHead {
+    flex-wrap: wrap;
+  }
+}
